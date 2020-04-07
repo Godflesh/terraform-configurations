@@ -7,6 +7,10 @@ remote_state {
     encrypt           = false
     region            = "us-east-1"
     endpoint          = "https://minio.devopsua.tk"
+//    endpoints {
+//    dynamodb = "http://localhost:4569/"
+//    }
+//    dynamodb_table    = "terraform-lock"
     skip_requesting_account_id = true
     skip_credentials_validation = true
     skip_get_ec2_platforms = true

@@ -4,7 +4,7 @@ provider "dns" {
     server        = local.dns_server_ip
     key_name      = local.dns_key_name
     key_algorithm = "hmac-md5"
-    key_secret    = "YXplcnR5QVpFUlRZMTIzNDU2"
+    key_secret    = local.dns_rndc_key
   }
 }
 
