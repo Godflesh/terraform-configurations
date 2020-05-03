@@ -11,7 +11,7 @@ provider "aws" {
   skip_metadata_api_check     = true
   skip_requesting_account_id  = true
   endpoints {
-    dynamodb = "http://sg-wa-b.ua.int:8000"
+    dynamodb = "http://192.168.58.102:8000"
   }
 }
 

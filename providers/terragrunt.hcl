@@ -6,7 +6,7 @@ remote_state {
     key               = "${path_relative_to_include()}/terraform.tfstate"
     encrypt           = false
     region            = "us-east-1"
-    endpoint          = "https://minio.devopsua.tk"
+    endpoint          = "https://minio.area.ua"
 //    endpoints {
 //    dynamodb = "http://localhost:4569/"
 //    }
@@ -25,5 +25,5 @@ inputs = {
   terraform_remote_state_s3_bucket      = "terraform-state"
   terraform_remote_state_dynamodb_table = "wa-terraform-lock"
   terraform_remote_state_file_name      = "terraform.tfstate"
-  vault_address                         = "https://vault.devopsua.tk"
+  vault_address                         = "https://vault.area.ua"
 }

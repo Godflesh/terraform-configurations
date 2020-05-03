@@ -10,5 +10,5 @@ provider "dns" {
 
 provider "vault" {
   version = "~> 2.8"
-  address = var.vault_address
+  address = "http://vault.area.ua:8200"
 }
