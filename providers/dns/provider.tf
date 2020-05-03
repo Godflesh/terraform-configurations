@@ -1,9 +1,14 @@
 provider "dns" {
   version = "~> 2.2"
   update {
-    server        = "172.16.160.142"
-    key_name      = "master_key."
-    key_algorithm = "hmac-sha256"
-    key_secret    = "YXplcnR5QVpFUlRZMTIzNDU2"
+    server        = local.dns_server_ip
+    key_name      = local.dns_key_name
+    key_algorithm = "hmac-md5"
+    key_secret    = local.dns_rndc_key
   }
+}
+
+provider "vault" {
+  version = "~> 2.8"
+  address = "http://vault.area.ua:8200"
 }

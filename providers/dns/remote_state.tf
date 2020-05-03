@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket                       = "wa-terraform"
-    key                          = "wa-terraform/terraform.tfstate"
+    bucket                       = "terraform-state"
+    key                          = "terraform/terraform.tfstate"
     region                       = "us-east-1"
     access_key                   = "minio"
     secret_key                   = "minio131313"
